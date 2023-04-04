@@ -1,11 +1,12 @@
-/**************parametre genraux***********************/
-body {
+/*****************parametre generaux**************************/
+
+* {
   margin: 0;
   padding: 0;
-  background: white;
-  color: black;
-  max-height: 100%;
-  border: 2px solid red;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
 }
 li {
   list-style: none;
@@ -13,41 +14,47 @@ li {
 a {
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 
 /******************nav**************************************/
-header {
-  border: 2px solid red;
-  padding: 10px;
+nav {
+  margin: 0 auto;
 }
-header ul {
-  border: 2px solid red;
+nav a {
+  color: black;
+}
+nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin: 8px auto;
 }
-header li {
-  border: 2px solid red;
-  margin: 10px;
-  display: flex;
-  justify-content: flex-end;
+nav li {
+  padding: 10px;
 }
 .svg {
-  border: 2px solid red;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: white;
   text-align: center;
+  border: none;
 }
 .gb_Ae {
-  padding: 8px;
-  height: 25px;
-  width: 25px;
+  text-align: center;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
 }
 .gb_Ae:hover {
   border-radius: 50%;
   background: rgb(214, 212, 212);
 }
 
-header button {
+.connexions {
   width: 120px;
   height: 35px;
   border-radius: 5px;
@@ -56,59 +63,128 @@ header button {
   border: none;
   font-size: 1rem;
 }
-header a {
-  color: black;
+.connexions a {
+  color: white;
 }
+
 /*********************main********************************/
 .main {
-  border: 2px solid red;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  margin: 150px;
-}
-
-.form-groupe {
-  border: 2px solid red;
-  display: flex;
-  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  margin: 30px;
+  margin: 100px;
 }
-
-.champ {
-  border: 2px solid red;
+.main .form-groupe {
   display: flex;
-  align-items: flex end;
-  align-items: center;
-  height: 50px;
-  width: 600px;
-  border: 1px solid black;
-  background: transparent;
+  flex-direction: column;
+  width: 40%; /*mettre une largeur defaut pour linput*/
+}
+.main input {
+  margin-top: 20px;
+  padding: 15px;
   border-radius: 50px;
-  margin-bottom: 10px;
-  color: black;
+  border: 1px solid #d1d1d1d1;
+  width: 100%;
 }
-.champ:hover {
-  background: rgb(239, 239, 240);
+input:hover {
+  -webkit-box-shadow: -16px 16px 13px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -16px 16px 13px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: -16px 16px 13px -9px rgba(0, 0, 0, 0.75);
 }
-.main.button {
-  border-radius: 10px;
-  border: none;
-  padding: 5px 15px;
-  color: black;
+input:focus {
+  outline: none;
+}
+
+.main button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
   text-align: center;
-  width: 90%;
-  height: 10px;
+  cursor: pointer;
+  user-select: none;
 }
+.main button:hover {
+  border: 1px solid rgb(209, 209, 209);
+}
+
 .main-text {
-  border: 2px solid red;
   background: white;
 }
+/******************************** section-infos****************************** */
+.infos {
+  background: rgb(242, 242, 242);
+  margin-top: 100px;
+}
 
-.footer-container {
+.pays {
+  padding: 8px;
+  color: #797f8c;
+}
+.line {
+  border: 0.5px solid rgb(231, 231, 231);
+}
+
+/**********************footer*************************/
+footer {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+footer a {
+  color: #797f8c;
+}
+.text {
+  margin: 10px;
+}
+.infos-google {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-left ul {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.footer-left li {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.footer-right ul {
+  display: flex;
+}
+.footer-right li {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

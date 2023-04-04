@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://fontawesome.com/?utm_source=font_awesome_homepage&utm_medium=display&utm_campaign=fa5_released&utm_content=auto_modal/"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
     <!-- /**********en tete********************************/ -->
 
-    <header>
+    <nav>
       <ul>
         <li>
           <a href="https://accounts.google.com/">Gmail</a>
@@ -33,34 +36,33 @@
           </button>
         </li>
         <li>
-          <button>
+          <button class="connexions">
             <a href="https://www.google.com/intl/fr/account/about/">
               connexion</a
             >
           </button>
         </li>
       </ul>
-    </header>
+    </nav>
     <!-- /********************main************************/ -->
 
     <section class="main">
       <img src="./assets/img/google.png" alt="google" />
 
       <div class="form-groupe">
-        <label><i class="fa-solid fa-magnifying-glass"></i></label>
-        <input class="champ" type="text" />
-        <label><i class="fa-light fa-microphone"></i></label>
+        <!-- <label><i class="fa-solid fa-magnifying-glass"></i></label> -->
+        <input type="text" />
       </div>
 
       <div class="button">
         <button>Recherche Google</button>
         <button id="animation">
           <div>j'ai de la chance</div>
-          <div>je veux les tendances</div>
+          <!-- <div>je veux les tendances</div>
           <div>je veux des étoiles</div>
           <div>j'ai faim</div>
           <div>je veux des doodle</div>
-          <div>j'ai envie de rire</div>
+          <div>j'ai envie de rire</div> -->
         </button>
       </div>
 
@@ -71,13 +73,15 @@
         ><span>: la melodie des couleur</span>
       </div>
     </section>
-
     <!-- /**********************bas de page***********************************/ -->
-    <footer class="footer-container">
+
+    <section class="infos">
       <div class="pays">France</div>
       <div class="line"></div>
+    </section>
 
-      <div class="texte-container">
+    <footer>
+      <section class="text">
         <div class="text-objectif">
           <a
             href="https://sustainability.google/intl/fr/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="
@@ -85,54 +89,56 @@
             objectifs en matière de développement durable
           </a>
         </div>
-      </div>
-      <!-- /******************cotez gauche **************************/ -->
-      <div class="footer-left">
-        <ul>
-          <li>
-            <a href="https://about.google/">a propos</a>
-          </li>
-          <li><a href="https://ads.google.com/">Publicité</a></li>
-          <li>
-            <a href="https://smallbusiness.withgoogle.com/">Emptreprise</a>
-          </li>
-          <li>
-            <a href="https://www.google.com/search/howsearchworks/?fg=1"
-              >commentfonctionne la recherche Google ?</a
-            >
-          </li>
-        </ul>
-      </div>
-      <!-- /****************************** cotez droite****************/ -->
-      <div class="footer-right">
-        <ul>
-          <li>
-            <a
-              href="> https://support.google.com/legal/answer/3110420?hl=fr&fg=1"
-              >Signaler un contenu inaproprié</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://support.google.com/websearch/answer/7585859?hl=fr&fg=1&visit_id=638161350663134194-3165618891&p=fr_consumer_info&rd=1"
-            >
-              Info consomateur</a
-            >
-          </li>
-          <li>
-            <a href="https://policies.google.com/privacy?hl=fr&fg=1"
-              >Confidentialité</a
-            >
-          </li>
-          <li>
-            <a href="https://policies.google.com/terms?hl=fr&fg=1"
-              >Conditions</a
-            >
-          </li>
-          <li><a href="parametres"></a>parametres</li>
-        </ul>
-      </div>
+      </section>
+      <section class="infos-google">
+        <!-- /******************cotez gauche **************************/ -->
+        <div class="footer-left">
+          <ul>
+            <li>
+              <a href="https://about.google/">a propos</a>
+            </li>
+            <li><a href="https://ads.google.com/">Publicité</a></li>
+            <li>
+              <a href="https://smallbusiness.withgoogle.com/">Emptreprise</a>
+            </li>
+            <li>
+              <a href="https://www.google.com/search/howsearchworks/?fg=1"
+                >comment fonctionne la recherche Google ?</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- /****************************** cotez droite****************/ -->
+
+        <div class="footer-right">
+          <ul>
+            <li>
+              <a
+                href="> https://support.google.com/legal/answer/3110420?hl=fr&fg=1"
+                >Signaler un contenu inaproprié</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://support.google.com/websearch/answer/7585859?hl=fr&fg=1&visit_id=638161350663134194-3165618891&p=fr_consumer_info&rd=1"
+              >
+                Info consomateur</a
+              >
+            </li>
+            <li>
+              <a href="https://policies.google.com/privacy?hl=fr&fg=1"
+                >Confidentialité</a
+              >
+            </li>
+            <li>
+              <a href="https://policies.google.com/terms?hl=fr&fg=1"
+                >Conditions</a
+              >
+            </li>
+            <li><a href="https://about.google/">Parametres</a></li>
+          </ul>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
-?
